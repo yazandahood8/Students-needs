@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui2.whatlearn.ChooseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Click to check if you are accepted for a specific subject in many academics"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnCheckAcceptable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Acceptable" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="Can't figure out what you want to learn?!\nDon't worry..., click to do a simple test that determines your personality"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+        <Button
+            android:id="@+id/btnoStudyOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Study Offer" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="don't have psychometric grade?!\n
+Don't worry..., click to find out many topics that do not require a psychometric grade"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnStuWithoutPsy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Study without psychometrics" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

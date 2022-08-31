@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_notstudent"
+    app:startDestination="@+id/nav_home2">
+
+
+    <fragment
+        android:id="@+id/nav_home2"
+        android:name="com.example.students.ui2.home2.HomeFragment2"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home2" />
+
+    <fragment
+        android:id="@+id/nav_profile2"
+        android:name="com.example.students.ui2.Profile2.ProfileFragment2"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/activity_profile_fragment2" />
+
+    <fragment
+        android:id="@+id/nav_whatlearn"
+        android:name="com.example.students.ui2.whatlearn.ChooseFragment"
+        android:label="@string/menu_whatlearn"
+        tools:layout="@layout/fragment_choose" />
+    <fragment
+        android:id="@+id/nav_asktoknow"
+        android:name="com.example.students.ui2.AskToKnow.AskToKnowFragment"
+        android:label="@string/menu_asktoknow"
+        tools:layout="@layout/fragment_ask_to_know" />
+
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.students.ui2.map.MapFragment"
+        android:label="@string/menu_restaurants"
+        tools:layout="@layout/fragment_restaurants" />
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.example.students.ui.restaurants.RestaurantsFragment"
+        android:label="@string/menu_contactus"
+        tools:layout="@layout/fragment_contactus" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.students.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

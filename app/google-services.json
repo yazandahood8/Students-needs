@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "395953920150",
+    "firebase_url": "https://total-well-151018.firebaseio.com",
+    "project_id": "total-well-151018",
+    "storage_bucket": "total-well-151018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395953920150:android:3a62d823731c9d97898ab7",
+        "android_client_info": {
+          "package_name": "com.example.students"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395953920150-ck48s8m1s7hb48ob12jdg8i24e62e0b5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.students",
+            "certificate_hash": "44b5aab81edc408b57b11a85867b0f29a9bd6855"
+          }
+        },
+        {
+          "client_id": "395953920150-v08jua97msei7jd9c8na6ajlnrol4h1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM2MMbN2mS2wvjWl-ybxMUGYZGAPOYg58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395953920150-v08jua97msei7jd9c8na6ajlnrol4h1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

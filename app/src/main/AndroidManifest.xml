@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.students">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Students">
+        <activity android:name=".ui2.whatlearn.AcademicsWithoutPsycho"></activity>
+        <activity android:name=".ui2.whatlearn.WithoutPsychoActivity" />
+        <activity
+            android:name=".ui2.whatlearn.ComparableActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ui2.AskToKnow.CommentsActivity" />
+        <activity android:name=".ui2.AskToKnow.AddPostActivity" />
+        <activity android:name=".OnBoarding.OnboardingActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".SelectSubjectActivity" />
+        <activity android:name=".ShowSubjectActivity" />
+        <activity android:name=".ui2.MainGradesOfferActivity" />
+        <activity android:name=".ui2.ResultStudyOfferSubjectsActivity" />
+        <activity android:name=".ui2.ResultStudyOfferActivity" />
+        <activity android:name=".ui2.StudyOfferActivity" />
+        <activity android:name=".ui2.SubjectsListActivity" />
+        <activity android:name=".ui2.SubjectViewActivity" />
+        <activity android:name=".ui.TableSettingsActivity" />
+        <activity android:name=".ResultChooseActivity" />
+        <activity android:name=".MainGradesActivity" />
+        <activity android:name=".ChooseSubjectActivity" />
+        <activity android:name=".SelectAcademyActivity" />
+        <activity android:name=".ImageActivity" />
+        <activity android:name=".RestaurantsShowActivity" />
+        <activity android:name=".ResturantsMapsActivity" />
+        <activity android:name=".ResetPasswActivity" />
+        <activity android:name=".DeplomaAverageActivity" />
+        <activity android:name=".UniverstyViewActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".UniversityMapsActivity"
+            android:label="@string/title_activity_university_maps" />
+        <activity
+            android:name=".NotStudentActivity"
+            android:label="@string/title_activity_not_student"
+            android:theme="@style/Theme.Students.NoActionBar" />
+        <activity
+            android:name=".StudentsMain"
+            android:label="@string/title_activity_students_main"
+            android:theme="@style/Theme.Students.NoActionBar" />
+        <activity android:name=".Login2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".BroadcastRec.ChatAlarm"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
+        <receiver android:name=".BroadcastRec.ChatAutoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BroadcastRec.scheduleAlarm"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":re" />
+        <receiver android:name=".BroadcastRec.scheduleAutoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".data.ChatService"
+            android:enabled="true"
+            android:process=":your_service" />
+        <service
+            android:name=".data.ScheduleService"
+            android:enabled="true"
+            android:process=":schedule_service" />
+    </application>
+
+</manifest>
